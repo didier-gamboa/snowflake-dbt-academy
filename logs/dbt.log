@@ -1,0 +1,102 @@
+[0m09:06:29.672921 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C93CB0FC50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C93CA77CD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C93CA77D50>]}
+
+
+============================== 09:06:29.710598 | c856d2b2-784e-4851-861b-9ee0fb32d70f ==============================
+[0m09:06:29.710598 [info ] [MainThread]: Running with dbt=1.13.0-b1
+[0m09:06:29.715605 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\dgamboa\\.dbt', 'invocation_command': 'dbt init', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'logs'}
+[0m09:06:29.719140 [debug] [MainThread]: Tracking: tracking
+[0m09:06:29.855830 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\dgamboa\.dbt
+[0m09:06:46.193357 [debug] [MainThread]: Starter project path: C:\Users\dgamboa\Documents\Snowflake Academy\snowflake-dbt-academy\.venv\Lib\site-packages\dbt\include\starter_project
+[0m09:06:46.416200 [info ] [MainThread]: Setting up your profile.
+[0m09:07:06.477666 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m09:07:06.481199 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m09:07:06.484208 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m09:16:30.471751 [info ] [MainThread]: Profile snowflake_dbt_academy written to C:\Users\dgamboa\.dbt\profiles.yml using target's profile_template.yml and your supplied values.
+[0m09:16:30.481240 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m09:16:30.485771 [info ] [MainThread]: dbt version: 1.13.0-b1
+[0m09:16:30.487775 [info ] [MainThread]: python version: 3.11.9
+[0m09:16:30.493798 [info ] [MainThread]: python path: C:\Users\dgamboa\Documents\Snowflake Academy\snowflake-dbt-academy\.venv\Scripts\python.exe
+[0m09:16:30.496792 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m09:16:30.551101 [info ] [MainThread]: Using profiles dir at C:\Users\dgamboa\.dbt
+[0m09:16:30.552873 [info ] [MainThread]: Using profiles.yml file at C:\Users\dgamboa\.dbt\profiles.yml
+[0m09:16:30.553878 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\dgamboa\Documents\Snowflake Academy\snowflake-dbt-academy\snowflake_dbt_academy\dbt_project.yml
+[0m09:16:30.554872 [info ] [MainThread]: adapter type: snowflake
+[0m09:16:30.555873 [info ] [MainThread]: adapter version: 1.12.4
+[0m09:16:30.638944 [info ] [MainThread]: Configuration:
+[0m09:16:30.639969 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m09:16:30.641958 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m09:16:30.642964 [info ] [MainThread]: Required dependencies:
+[0m09:16:30.644277 [debug] [MainThread]: Executing "git --help"
+[0m09:16:30.656441 [info ] [MainThread]:  - git [[31mERROR[0m]
+
+[0m09:16:30.658435 [info ] [MainThread]: Connection:
+[0m09:16:30.660429 [info ] [MainThread]:   account: VOIWIVE-CSB34220
+[0m09:16:30.662946 [info ] [MainThread]:   user: DGAMBOA@APEXSYSTEMS.COM
+[0m09:16:30.663972 [info ] [MainThread]:   database: ANALYTICS
+[0m09:16:30.664975 [info ] [MainThread]:   warehouse: TRAINING_WH
+[0m09:16:30.665975 [info ] [MainThread]:   role: TRAINING_ROLE
+[0m09:16:30.668972 [info ] [MainThread]:   schema: STAGING
+[0m09:16:30.669969 [info ] [MainThread]:   authenticator: None
+[0m09:16:30.670483 [info ] [MainThread]:   oauth_client_id: None
+[0m09:16:30.671506 [info ] [MainThread]:   query_tag: None
+[0m09:16:30.672506 [info ] [MainThread]:   client_session_keep_alive: False
+[0m09:16:30.673505 [info ] [MainThread]:   host: None
+[0m09:16:30.674505 [info ] [MainThread]:   port: None
+[0m09:16:30.674505 [info ] [MainThread]:   proxy_host: None
+[0m09:16:30.677509 [info ] [MainThread]:   proxy_port: None
+[0m09:16:30.678505 [info ] [MainThread]:   protocol: None
+[0m09:16:30.679504 [info ] [MainThread]:   connect_retries: 1
+[0m09:16:30.681506 [info ] [MainThread]:   connect_timeout: None
+[0m09:16:30.682502 [info ] [MainThread]:   retry_on_database_errors: False
+[0m09:16:30.683506 [info ] [MainThread]:   retry_all: False
+[0m09:16:30.684502 [info ] [MainThread]:   insecure_mode: False
+[0m09:16:30.684502 [info ] [MainThread]:   reuse_connections: True
+[0m09:16:30.686393 [info ] [MainThread]:   s3_stage_vpce_dns_name: None
+[0m09:16:30.687462 [info ] [MainThread]:   workload_identity_provider: None
+[0m09:16:30.687462 [info ] [MainThread]:   workload_identity_entra_resource: None
+[0m09:16:30.688477 [info ] [MainThread]:   platform_detection_timeout_seconds: 0.0
+[0m09:16:30.689477 [info ] [MainThread]: Registered adapter: snowflake=1.12.4
+[0m09:16:31.337929 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m09:16:31.341460 [debug] [MainThread]: Using snowflake connection "debug"
+[0m09:16:31.342456 [debug] [MainThread]: On debug: select 1 as id
+[0m09:16:31.344464 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m09:16:32.830896 [debug] [MainThread]: Snowflake adapter: Error running SQL: select 1 as id
+[0m09:16:32.832955 [debug] [MainThread]: Snowflake adapter: Rolling back transaction.
+[0m09:16:32.834470 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m09:16:32.837299 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m09:16:32.839299 [info ] [MainThread]: Error from git --help: Could not find command, ensure it is in the user's PATH and that the user has permissions to run it: "git"
+
+[0m09:16:32.840317 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  390100 (28000): Failed to connect to DB: VOIWIVE-CSB34220.snowflakecomputing.com:443. Incorrect username or password was specified. [46775627-159f-4eb4-b089-877923e1c999]
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m09:16:32.842168 [info ] [MainThread]: Your new dbt project "snowflake_dbt_academy" was created!
+Initialized new project in C:\Users\dgamboa\Documents\Snowflake Academy\snowflake-dbt-academy\snowflake_dbt_academy\snowflake_dbt_academy
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m09:16:32.844501 [info ] [MainThread]: [31mYour profile may need adjustments. You can find the logs of `dbt debug` above[0m
+[0m09:16:32.846576 [debug] [MainThread]: Command `dbt init` succeeded at 09:16:32.846576 after 606.86 seconds
+[0m09:16:32.847572 [debug] [MainThread]: Connection 'debug' was left open.
+[0m09:16:32.848621 [debug] [MainThread]: On debug: No close available on handle
+[0m09:16:32.848621 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C93CB16050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C936615AD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C93CA3BA50>]}
+[0m09:16:32.850513 [debug] [MainThread]: Flushing usage events
+[0m09:16:33.960867 [debug] [MainThread]: An error was encountered while trying to flush usage events
